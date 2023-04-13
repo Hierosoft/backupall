@@ -23,7 +23,8 @@ The Python versions below can be downloaded from the list of Python releases (on
     - If you are trying to use 3.2 entirely and got setuptools <8 installed for it, see https://bootstrap.pypa.io/pip/3.2/ (get-pip.py)
 - Install Python 3.2 to `C:\Python32`
 - Make a copy of it called `C:\Python32-clean`
-- Download and unzip https://github.com/tkhyn/dirsync such as to `%USERPROFILE%\Downloads\dirsync-develop`
+- Download and extract https://github.com/tkhyn/dirsync such as to `%USERPROFILE%\Downloads\dirsync-develop`
+  - Recommended: Use a release from <https://pypi.org/project/dirsync/#files> such as the 2.2.5 release (tested and working on Python 3.2 on Windows 2000).
 - Run `C:\Python32\Scripts\pip install %USERPROFILE%\Downloads\dirsync-develop`
   (This step requires the internet so it should be done on the non-Win2k machine).
 - Use the diffnames.py script to make a patch directory.
