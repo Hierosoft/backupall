@@ -53,24 +53,12 @@ Requires: Python **\>=3.5**
 
 See? You will need to do research to find out versions compatible with Python 3.3.
 
-[Share](https://stackoverflow.com/a/56798945 "Short permalink to this answer")
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/ "The current license for this post: CC BY-SA 4.0")
 
-Share a link to this answer
-
-Copy link[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/ "The current license for this post: CC BY-SA 4.0")
-
-[Improve this answer](https://stackoverflow.com/posts/56798945/edit)
-
-Follow
-
-Follow this answer to receive notifications
-
-answered Jun 27, 2019 at 22:02
+answered Jun 27, 2019 at 22:02 by
 
 [
-
 ![phd's user avatar](https://www.gravatar.com/avatar/512cfbaf98d63ca4acd57b2df792aec6?s=64&d=identicon&r=PG)
-
 ](https://stackoverflow.com/users/7976758/phd)
 
-[phd](https://stackoverflow.com/users/7976758/phd)phd
+[phd](https://stackoverflow.com/users/7976758/phd)
