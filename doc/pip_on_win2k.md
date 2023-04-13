@@ -20,7 +20,7 @@ The Python versions below can be downloaded from the list of Python releases (on
 - Patch Python 3.2 offline with pip
   - Create the patch using 3.3.0 (since get-pip.py doesn't work due to an old version of setuptools no longer being available--manual steps to install setuptools <8 would be necessary)
     - [ ] See [issue #1](https://github.com/Hierosoft/backupall/issues/1): In the future, an offline patcher (containing upstream licenses) should be created for Python 3.2 so version compatibility is ensured.
-
+    - See https://bootstrap.pypa.io/pip/3.2/ (get-pip.py)
 
 ### Details
 During install of Python 2.7.10, a warning appears saying that 3.3.0 will be the last version of Python released with Python support.
