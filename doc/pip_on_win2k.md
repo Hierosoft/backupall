@@ -15,23 +15,23 @@ Why these steps are necessary:
 
 The Python versions below can be downloaded from the list of Python releases (only some releases have downloads):
 <https://www.python.org/downloads/windows/>.
-- Get Python 3.3.0 x86
-- Get Python 3.2 x86
-- Patch Python 3.2 offline with pip: Create the patch (using 3.3.0 until issue below is resolved for 3.2) using the steps below.
-  - Install setuptools via `cd setuptools-*` then `C:\Python33\python setup.py install` then pip for your version of Python the same way except `cd pip-*` (See "[Quoted answer](#quoted-answer)" for Python 3.3)
-    - [ ] See [issue #1](https://github.com/Hierosoft/backupall/issues/1): In the future, an offline patcher (containing upstream licenses) should be created for Python 3.2 so version compatibility is ensured.
-      - If you are trying to use 3.2 entirely and got setuptools <8 installed for it, see https://bootstrap.pypa.io/pip/3.2/ (get-pip.py)
-  - Install Python 3.2 to `C:\Python32`
-  - Make a copy of it called `C:\Python32-clean`
-  - Download and unzip https://github.com/tkhyn/dirsync such as to `%USERPROFILE%\Downloads\dirsync-develop`
-  - Run `C:\Python32\Scripts\pip install %USERPROFILE%\Downloads\dirsync-develop`
-    (This step requires the internet so it should be done on the non-Win2k machine).
-  - Use the diffnames.py script to make a patch directory.
-  - Copy the C:\\Downloads\\pip+six+dirsync-patch_for_Python3.3 directory (created in the step above) and the Python 3.2 x86 (not x86_64) installer (from "The Python versions" link above) to a flash drive.
-  - Install Python 3.2 on the Windows 2000 computer.
-  - Copy all of the directories from the pip+six+dirsync-patch_for_Python3.3 directory to the `C:\Python32` directory on the Windows 2000 computer.
-    - To ensure it worked correctly, you should now have a `C:\Python33\Lib\site-packages\dirsync` directory.
-    - You will also have `C:\Python32\Scripts\pip.exe` but it is the version from the patch and shouldn't be used unless the Python version used to make the patch matches (See issue #1).
+- Get Python 3.3.0 x86 (not x86_64)
+- Get Python 3.2 x86 (not x86_64)
+- Next, patch Python 3.2 offline with pip: Create the patch (using 3.3.0 until issue below is resolved for 3.2) using the rest of these steps.
+  Install setuptools via `cd setuptools-*` then `C:\Python33\python setup.py install` then pip for your version of Python the same way except `cd pip-*` (See "[Quoted answer](#quoted-answer)" for Python 3.3)
+  - [ ] See [issue #1](https://github.com/Hierosoft/backupall/issues/1): In the future, an offline patcher (containing upstream licenses) should be created for Python 3.2 so version compatibility is ensured.
+    - If you are trying to use 3.2 entirely and got setuptools <8 installed for it, see https://bootstrap.pypa.io/pip/3.2/ (get-pip.py)
+- Install Python 3.2 to `C:\Python32`
+- Make a copy of it called `C:\Python32-clean`
+- Download and unzip https://github.com/tkhyn/dirsync such as to `%USERPROFILE%\Downloads\dirsync-develop`
+- Run `C:\Python32\Scripts\pip install %USERPROFILE%\Downloads\dirsync-develop`
+  (This step requires the internet so it should be done on the non-Win2k machine).
+- Use the diffnames.py script to make a patch directory.
+- Copy the C:\\Downloads\\pip+six+dirsync-patch_for_Python3.3 directory (created in the step above) and the Python 3.2 x86 (not x86_64) installer (from "The Python versions" link above) to a flash drive.
+- Install Python 3.2 on the Windows 2000 computer.
+- Copy all of the directories from the pip+six+dirsync-patch_for_Python3.3 directory to the `C:\Python32` directory on the Windows 2000 computer.
+  - To ensure it worked correctly, you should now have a `C:\Python33\Lib\site-packages\dirsync` directory.
+  - You will also have `C:\Python32\Scripts\pip.exe` but it is the version from the patch and shouldn't be used unless the Python version used to make the patch matches (See issue #1).
 
 ### Details
 During install of Python 2.7.10, a warning appears saying that 3.3.0 will be the last version of Python released with Python support.
@@ -47,7 +47,6 @@ Neither version of Python will run ("not a valid Win32 application") though!
 
 The following was created manually using downloaded repo and pip:
 - six+dirsync-patch_for_Python2.7.10.zip
-
 
 ### Quoted answer
 <https://stackoverflow.com/questions/56798617/how-to-install-pip-for-python-3-3-on-windows>
