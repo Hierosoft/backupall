@@ -8,5 +8,5 @@ There are many good backup programs, but supporting Windows 2000 is the reason b
 For Windows 2000, you will need Python 3.2 (also very old, but apparently the latest to support Windows 2000).
 
 Installing dependencies can be done on a computer with Python (x86 not x86_64) on a recent version of Windows then transferred to the Windows 2000 computer.
-- Why? Because you shouldn't use Windows 2000 offline! It is too old. Microsoft said it had 20,000 unpatched vulnerabilities when support ended.
+- Why? Because you shouldn't use Windows 2000 offline! It is too old. Microsoft said it had over 20,000 known issues when support ended.
 - How: See [doc/pip_on_win2k.md](doc/pip_on_win2k.md).
