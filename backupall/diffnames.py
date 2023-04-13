@@ -101,7 +101,7 @@ def diffnames(small_dir, big_dir, patch_dir, exclude_dotexts=[".pyc"]):
 
 
 def main():
-    diffnames("C:\\Python32-clean", "C:\\Python32", "C:\\Downloads\\pip+six+dirsync-patch_for_Python3.2")
+    diffnames("C:\\Python33-clean", "C:\\Python33", "C:\\Downloads\\pip+six+dirsync-patch_for_Python3.3")
     return 0
 
 
