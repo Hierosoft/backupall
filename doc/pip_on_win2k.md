@@ -1,27 +1,36 @@
 # PIP on Win2k
+
 (without the internet)
 
+## Steps to create offline package
 Why these steps are necessary:
 - Later versions of Python dropped support for Win2k, but the Python 3 versions that support it don't come with pip (nor setuptools which pip requires).
 - Avoid connecting Win2k to the internet since it has many known vulnerabilities and is no longer supported by Microsoft.
 
-The Python versions necessary can be downloaded from the list of Python releases (only some releases have downloads):
-<https://www.python.org/downloads/windows/>
+The Python versions below can be downloaded from the list of Python releases (only some releases have downloads):
+<https://www.python.org/downloads/windows/>.
+- Get Python 3.3.0 x86
+- Get Python 3.2 x86
+- Patch Python 3.2 offline with pip
+  - Create the patch using 3.3.0 (since get-pip.py doesn't work due to an old version of setuptools no longer being available--manual steps to install setuptools <8 would be necessary)
+    - [ ] See [issue #1](https://github.com/Hierosoft/backupall/issues/1): In the future, an offline patcher (containing upstream licenses) should be created for Python 3.2 so version compatibility is ensured.
 
+
+## Didn't work
 During install of Python 2.7.10, a warning appears saying that 3.3.0 will be the last version of Python released with Python support.
+- However, the wording may have been "after 3.3.0" and 3.3.0 does not work ("not a valid Win32 application").
 
 These notes explain what was tried, including Python 3.3.5 even though that is above 3.3.0.
-- 3.3.5 doesn't run ("not a valid win32 application") on Win2k though it installs (I ensured that I used the 32-bit version).
 
 The files were created using a Windows computer using the same (32-bit) version of Python connected to the internet (So that the Win2k machine doesn't have to be).
 
-The following was created using the manually downloaded dirsync repo and the quoted answer further down and diffnames.py by Jake Gustafson:
+The following was created using the manually downloaded dirsync repo and the quoted answer further down and ../backupall/diffnames.py:
+Neither version of Python will run ("not a valid Win32 application") though!
+- pip+six+dirsync-patch_for_Python3.3.0.zip
 - pip+six+dirsync-patch_for_Python3.3.5.zip
-- (unusable since 3.3.0 doesn't run) pip+six+dirsync-patch_for_Python3.3.5.zip
 
 The following was created manually using downloaded repo and pip:
 - six+dirsync-patch_for_Python2.7.10.zip
-
 
 ## Quoted answer
 <https://stackoverflow.com/questions/56798617/how-to-install-pip-for-python-3-3-on-windows>
