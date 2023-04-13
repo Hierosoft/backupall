@@ -10,7 +10,7 @@ ECHO Started %~dp0 >> %LOG%
 ECHO %DATE% >> %LOG%
 ECHO %TIME% >> %LOG%
 
-C:\Python32\python C:\backupall.py 2>%LOG%
+C:\Python32\python C:\backup-all.py 2>>%LOG%
 IF %ERRORLEVEL% NEQ 0 GOTO :END
 GOTO ENDSILENT
 
