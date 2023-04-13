@@ -22,7 +22,7 @@ The Python versions below can be downloaded from the list of Python releases (on
     - [ ] See [issue #1](https://github.com/Hierosoft/backupall/issues/1): In the future, an offline patcher (containing upstream licenses) should be created for Python 3.2 so version compatibility is ensured.
 
 
-## Didn't work
+### Details
 During install of Python 2.7.10, a warning appears saying that 3.3.0 will be the last version of Python released with Python support.
 - However, the wording may have been "after 3.3.0" and 3.3.0 does not work ("not a valid Win32 application").
 
@@ -39,7 +39,7 @@ The following was created manually using downloaded repo and pip:
 - six+dirsync-patch_for_Python2.7.10.zip
 
 
-## Quoted answer
+### Quoted answer
 <https://stackoverflow.com/questions/56798617/how-to-install-pip-for-python-3-3-on-windows>
 `pip` dropped support for Python 3.3 at version [18.0](https://pip.pypa.io/en/stable/news/#id109). `setuptools` (required by `pip`) dropped support for Python 3.3 at version [40.0](https://github.com/pypa/setuptools/blob/master/CHANGES.rst#v4000). So you need to download [`pip 10.0.1`](https://pypi.org/project/pip/10.0.1/#files) and [`setuptools 39.2.0`](https://pypi.org/project/setuptools/39.2.0/#files) (source distributions, `*.tar.gz`). Extract the archives and run `python setup.py install` first for `setuptools`, then for `pip`.
 
