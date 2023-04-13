@@ -1,0 +1,10 @@
+Backup-all.bat was written by Jake Gustafson 2023-02-06 
+Started C:\ 
+Wed 04/12/2023 
+15:39:24.85 
+Sharing violation
+Sharing violation
+Sharing violation
+Sharing violation
+Sharing violation
+Insufficient memory
