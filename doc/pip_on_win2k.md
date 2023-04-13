@@ -1,6 +1,12 @@
 # PIP on Win2k
+This document explains how to install Python and necessary dependencies onto a Windows 2000 computer not connected to the internet.
+- Why: because Windows 2000 has unpatched vulnerabilities and shouldn't be connected to the internet at all!
+- Make sure you *never* plug an ethernet cable connected to an internet-enabled router into your Windows 2000 machine. Also never connect wirelessly to the internet.
 
-(without the internet)
+Wow, Windows 2000 is really old, but some manufacturing devices still require it.
+
+There are many good backup programs, but supporting Windows 2000 is the reason **backupall** is here.
+
 
 ## Steps to create offline package
 Why these steps are necessary:
@@ -31,6 +37,7 @@ Neither version of Python will run ("not a valid Win32 application") though!
 
 The following was created manually using downloaded repo and pip:
 - six+dirsync-patch_for_Python2.7.10.zip
+
 
 ## Quoted answer
 <https://stackoverflow.com/questions/56798617/how-to-install-pip-for-python-3-3-on-windows>
@@ -67,5 +74,3 @@ answered Jun 27, 2019 at 22:02
 ](https://stackoverflow.com/users/7976758/phd)
 
 [phd](https://stackoverflow.com/users/7976758/phd)phd
-
-79.3k1212 gold badges115115 silver badges153
