@@ -54,6 +54,7 @@ def backup(sources, destination_root):
             # NOTE: use mkdir to ensure the path is ok
             #   (os.makedirs would create intermediate directories).
         sync(source, destination, 'sync')  # 'sync': one way
+        echo0('[backup] sync completed for "{}"'.format(source)) 
     return 0
 
 
